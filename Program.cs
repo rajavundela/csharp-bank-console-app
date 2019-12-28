@@ -13,10 +13,7 @@ namespace classes_tutorial
             Console.WriteLine($"Account {account.Number} was created for {account.Owner} with initial balance {account.Balance}.");
 
             account.MakeWithdrawal(500, DateTime.Now, "Rent Payment");
-            Console.WriteLine($"The current balance: {account.Balance}");
             account.MakeDeposit(200, DateTime.Now, "mom gave it.");
-            Console.WriteLine($"The current balance: {account.Balance}");
-
             Console.WriteLine(account.GetAccountHistory());
 
             // Test that the initial balances must be positive.
